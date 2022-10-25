@@ -2,7 +2,7 @@
 //  Item.swift
 //  eggplant-brownie
 //
-//  Created by Isabella Maia Bitencourt on 25/10/22.
+//  Created by Alberto Rodrigues on 25/10/22.
 //
 
 import UIKit
