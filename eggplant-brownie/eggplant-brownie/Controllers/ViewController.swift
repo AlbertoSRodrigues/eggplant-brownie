@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var refeicaoTableView : RefeicaoTableViewController?
     
     @IBOutlet var nomeComida: UITextField!
     @IBOutlet var valorNota: UITextField!
@@ -24,14 +25,11 @@ class ViewController: UIViewController {
         let refeicao = Refeicao(nome: comida, felicidade: nota)
         print("Comida: \(refeicao.nome)\n Nota: \(refeicao.felicidade)")
         
+        navigationController?.popViewController(animated: true)
+        
+        refeicaoTableView?.adicionarRefeicao(refeicao)
+        
+        
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        
-    }
-    
-    
 }
 
